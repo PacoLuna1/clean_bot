@@ -1,0 +1,45 @@
+### Requirements
+
+-> Menu con un loop para desplegar el mensaje de bienvenida con las siguientes opciones
+	- Iniciar proceso de limpieza
+	- Informacion
+	- Salir
+
+
+-> Iniciar proceso de limpieza 
+	- Despliegue del el mapa sucio ( Crear Objeto Mapa )
+		- Array Mapa
+		- Estados True
+		- Esta limpio? True
+	- Ingresar la ruta para la limpieza
+		- Coordenadas validas 
+			- Loop para array de coordenadas 
+				- Validar la coordenada 0-8
+		- Desplegar ruta a limpiar  (quitar la indexacion del mapa, trazar ruta)
+	- Recorrer mapa de limpieza con el agente
+		- Loop para recorrer matriz
+			- Imprimir donde se encuentra el bot con el nuevo mapa
+			- Verificar el estado de la coordenada
+				- Limpiar en caso de ser necesario ( 2 seg) -> Notificar estado (Limpiando)
+				- Notificar que ha sido limpiado o esta limpio
+			- Verificacion coordenadas de usuario limpias?
+		- Verificacion de matriz limpia?
+	- Return a menu
+
+
+
+
+## Objetos
+-> Mapa
+	- Matriz -> Celulas
+	- function isClean?		
+
+-> Celula
+	- Estado
+
+-> Agente
+	- CleanService
+	
+			
+			
+		
