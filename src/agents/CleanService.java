@@ -40,8 +40,12 @@ public class CleanService extends Agent{
         print("Please give a few seconds I'm turning off");
         System.exit(0);
     }
-    public void startCleanning(){
-        Map map = new Map();
+    public void startCleanning() {
+        try{
+            Map map = new Map();
+        }catch (Exception e){
+            print("Something went wrong");
+        }
     }
     public void info(){
         print("This is Agent created with Jade and Java.");
